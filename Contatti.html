@@ -1,53 +1,112 @@
 <!DOCTYPE html>
-<html lang="Ita">
-
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="StyleContatti.css" />
-    <link rel="stylesheet" href="Navbar.css" />
-    <title>Home</title>
-    <script src="https://kit.fontawesome.com/a38c6cc9ad.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contatti — Ca'Cino</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<!-- Body -->
-
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="./index.html" id="navbar__logo"> <!--<i class="fas fa-gem"></i>--> Ca'Cino</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span> <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="./Mappe.html" class="navbar__links">Mappe</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Istruzioni.html" class="navbar__links">Istruzioni</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Spazzatura.html" class="navbar__links">Spazzatura</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Wifi.html" class="navbar__links">Wifi</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Contatti.html" class="navbar__links">Contatti</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="body">
-
-        <!-- index -->
-        <div class="main">
-        </div>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">Ca'Cino</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="Mappe.html" class="navbar__links">Mappe</a></li>
+        <li><a href="Istruzioni.html" class="navbar__links">Istruzioni</a></li>
+        <li><a href="Spazzatura.html" class="navbar__links">Spazzatura</a></li>
+        <li><a href="Wifi.html" class="navbar__links">Wi-Fi</a></li>
+        <li><a href="Contatti.html" class="navbar__links">Contatti</a></li>
+      </ul>
     </div>
-    <script src="app.js"></script>
-</body>
+  </nav>
 
+  <div class="page-header">
+    <h1>Contatti</h1>
+    <div class="page-header__divider"></div>
+  </div>
+
+  <div class="content">
+
+    <div class="contacts-grid">
+      <div class="contact-card animate-up">
+        <div class="contact-card__icon">👤</div>
+        <h3 class="contact-card__name">Barbara Carrera</h3>
+        <p class="contact-card__role">Proprietario</p>
+        <div class="contact-card__detail">
+          <p>📱 <a href="tel:+393331234567">+39 328 281 9949</a></p>
+          <p>✉️ <a href="mailto:barbara@cacino.it">bcarrera1969@gmail.com</a></p>
+
+          <!-- <p>cambiare orari</p> -->
+          <p style="margin-top:0.75rem; font-size:0.9rem;">Disponibile ogni giorno 9:00–21:00. Per emergenze notturne, scrivete via WhatsApp.</p>
+        </div>
+      </div>
+
+      <div class="contact-card animate-up">
+        <div class="contact-card__icon">🔧</div>
+        <h3 class="contact-card__name">Assistenza Casa</h3>
+        <p class="contact-card__role">Manutenzione &amp; Problemi</p>
+        <div class="contact-card__detail">
+          <p>📱 <a href="tel:+393339876543">+39 328 281 9949</a></p>
+          <p style="margin-top:0.75rem; font-size:0.9rem;">Per problemi con impianti, elettricità, idraulica o qualsiasi guasto in appartamento.</p>
+        </div>
+      </div>
+
+      <div class="contact-card animate-up">
+        <div class="contact-card__icon">🏥</div>
+        <h3 class="contact-card__name">Ospedale Civile SS. Giovanni e Paolo</h3>
+        <p class="contact-card__role">Pronto Soccorso</p>
+        <div class="contact-card__detail">
+          <p>📞 <a href="tel:+390412784111">118</a></p>
+          <p style="margin-top:0.75rem; font-size:0.9rem;">Campo SS. Giovanni e Paolo, Venezia — raggiungibile a piedi o via vaporetto (linea 5.1).</p>
+        </div>
+      </div>
+
+      <div class="contact-card animate-up">
+        <div class="contact-card__icon">🚤</div>
+        <h3 class="contact-card__name">ACTV — Vaporetti</h3>
+        <p class="contact-card__role">Trasporto pubblico</p>
+        <div class="contact-card__detail">
+          <p>🌐 <a href="https://actv.avmspa.it" target="_blank">actv.avmspa.it</a></p>
+          <p style="margin-top:0.75rem; font-size:0.9rem;">Orari, linee e biglietti per i vaporetti di Venezia.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Emergency banner -->
+    <div class="emergency-banner">
+      <div class="emergency-banner__icon">🚨</div>
+      <div class="emergency-banner__text">
+        <h3>Numeri di emergenza</h3>
+        <p>
+          Carabinieri / Polizia: <strong>112</strong> &nbsp;·&nbsp;
+          Vigili del Fuoco: <strong>115</strong> &nbsp;·&nbsp;
+          Emergenza medica: <strong>118</strong> &nbsp;·&nbsp;
+          Guardia costiera: <strong>1530</strong>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer__top">
+      <div class="footer__brand"><p>Ca'Cino</p><span>Venezia, Italia</span></div>
+      <div class="footer__nav">
+        <h4>Navigazione</h4>
+        <a href="Mappe.html">Mappe</a>
+        <a href="Istruzioni.html">Istruzioni</a>
+        <a href="Spazzatura.html">Spazzatura</a>
+        <a href="Wifi.html">Wi-Fi</a>
+        <a href="Contatti.html">Contatti</a>
+      </div>
+    </div>
+    <div class="footer__bottom"><p>Ca'Cino &mdash; Guida per gli ospiti</p></div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
 </html>

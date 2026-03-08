@@ -1,60 +1,176 @@
 <!DOCTYPE html>
-<html lang="Ita">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="StyleIndex.css" />
-        <link rel="stylesheet" href="Navbar.css" />
-        <title>Home</title>
-        <script src="https://kit.fontawesome.com/a38c6cc9ad.js" crossorigin="anonymous"></script>
-    </head>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ca'Cino — Venezia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <!-- Body -->
-    <body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">Ca'Cino</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="Mappe.html" class="navbar__links">Mappe</a></li>
+        <li><a href="Istruzioni.html" class="navbar__links">Istruzioni</a></li>
+        <li><a href="Spazzatura.html" class="navbar__links">Spazzatura</a></li>
+        <li><a href="Wifi.html" class="navbar__links">Wi-Fi</a></li>
+        <li><a href="Contatti.html" class="navbar__links">Contatti</a></li>
+      </ul>
+    </div>
+  </nav>
 
-        <!-- NAVBAR -->
-        <nav class="navbar">
-            <div class="navbar__container">
-                <a href="./index.html" id="navbar__logo"> <!--<i class="fas fa-gem"></i>--> Ca'Cino</a>
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span> <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="./Mappe.html" class="navbar__links">Mappe</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="./Istruzioni.html" class="navbar__links">Istruzioni</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="./Spazzatura.html" class="navbar__links">Spazzatura</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="./Wifi.html" class="navbar__links">Wifi</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="./Contatti.html" class="navbar__links">Contatti</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="body">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__text">
+      <p class="hero__eyebrow">Venezia, Italia</p>
+      <h1 class="hero__title">Benvenuti a<br><em>Ca'Cino</em></h1>
+      <p class="hero__subtitle">La vostra casa nel cuore di Venezia</p>
+      <p class="hero__desc">
+        Tutto ciò che vi serve per vivere Venezia al meglio &mdash;
+        dalla raccolta differenziata alle mappe del quartiere,
+        dalle istruzioni di casa ai contatti di emergenza.
+      </p>
+    </div>
 
-            <!-- index -->
-            <div class="main">
-                <div class="main__container">
-                    <div class="main__content">
-                        <h1>Welcome to Ca'Cino</h1>
-                        <h2>Enjoy Venice</h2>
-                    </div>
-                    <div class="main__img--container">
-                        <w1>Carosello di foto</w1>
-                        <img src="images/Temp/pic4.jpg" alt="pic" id="main__img" />
-                    </div>
-                </div>
-            </div>
+    <!-- SLIDESHOW -->
+    <div class="hero__image slideshow" id="slideshow">
+
+      <!-- =====================================================
+           FOTO — per aggiungerne altre, copia un blocco
+           <div class="slide"> ... </div> qui sotto
+           ===================================================== -->
+      <div class="slide active">
+        <img src=".\images\Casa\20250420_123155.jpg" alt="Camera matrimoniale" />
+        <span class="slide__caption">Camera matrimoniale</span>
+      </div>
+      <div class="slide">
+        <img src=".\images\Casa\20250420_123838.jpg" alt="Camera con quadri" />
+        <span class="slide__caption">Camera doppia</span>
+      </div>
+      <div class="slide">
+        <img src=".\images\Casa\20250420_123849.jpg" alt="Camera singola" />
+        <span class="slide__caption">Camera singola</span>
+      </div>
+      <div class="slide">
+        <img src=".\images\Casa\20250420_123330.jpg" alt="Cucina" />
+        <span class="slide__caption">Cucina</span>
+      </div>
+      <div class="slide">
+        <img src=".\images\Casa\20250420_124509.jpg" alt="Cucina attrezzata" />
+        <span class="slide__caption">Cucina attrezzata</span>
+      </div>
+      <div class="slide">
+        <img src=".\images\Casa\20250420_124047.jpg" alt="Bagno" />
+        <span class="slide__caption">Bagno</span>
+      </div>
+      <div class="slide">
+        <img src=".\images\Casa\20250420_124055.jpg" alt="Cabina doccia" />
+        <span class="slide__caption">Cabina doccia idromassaggio</span>
+      </div>
+      <div class="slide">
+        <img src=".\images\Casa\20250420_123829.jpg" alt="Soggiorno" />
+        <span class="slide__caption">Soggiorno</span>
+      </div>
+      <div class="slide">
+        <img src=".\images\Casa\20250420_124209.jpg" alt="Corridoio" />
+        <span class="slide__caption">Corridoio</span>
+      </div>
+      <div class="slide">
+        <img src=".\images\Casa\20250420_124614.jpg" alt="Porta d'ingresso" />
+        <span class="slide__caption">Porta d'ingresso</span>
+      </div>
+      <div class="slide">
+        <img src=".\images\Casa\20250420_124645.jpg" alt="Scale condominiali" />
+        <span class="slide__caption">Scale condominiali</span>
+      </div>
+      <div class="slide">
+        <img src=".\images\Casa\20250420_124748.jpg" alt="Portone" />
+        <span class="slide__caption">Portone di accesso</span>
+      </div>
+      <!-- =====================================================
+           AGGIUNGI ALTRE FOTO QUI:
+           <div class="slide">
+             <img src="images/NOMEFILE.jpg" alt="Descrizione" />
+             <span class="slide__caption">Didascalia</span>
+           </div>
+           ===================================================== -->
+
+      <div class="hero__image-overlay"></div>
+      <button class="slide__btn slide__btn--prev" aria-label="Precedente">&#8249;</button>
+      <button class="slide__btn slide__btn--next" aria-label="Successiva">&#8250;</button>
+      <div class="slide__dots" id="slide-dots"></div>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS -->
+  <section class="features">
+    <div class="features__inner">
+      <p class="section-label">Guida rapida</p>
+      <h2 class="section-title">Tutto quello che vi serve</h2>
+      <div class="features__grid">
+        <a href="Istruzioni.html" class="feature-card animate-up" style="text-decoration:none">
+          <div class="feature-card__icon">🏠</div>
+          <h3 class="feature-card__title">Istruzioni Casa</h3>
+          <p class="feature-card__desc">Come funzionano i letti, la cucina, il bagno e l'entrata. Tutto spiegato semplicemente.</p>
+        </a>
+        <a href="Spazzatura.html" class="feature-card animate-up" style="text-decoration:none">
+          <div class="feature-card__icon">♻️</div>
+          <h3 class="feature-card__title">Raccolta Rifiuti</h3>
+          <p class="feature-card__desc">La differenziata a Venezia. Bidoni etichettati, orari di raccolta e sacchetti giusti.</p>
+        </a>
+        <a href="Wifi.html" class="feature-card animate-up" style="text-decoration:none">
+          <div class="feature-card__icon">📶</div>
+          <h3 class="feature-card__title">Wi-Fi</h3>
+          <p class="feature-card__desc">Scansionate il QR code per connettervi subito alla rete di casa.</p>
+        </a>
+        <a href="Mappe.html" class="feature-card animate-up" style="text-decoration:none">
+          <div class="feature-card__icon">🗺️</div>
+          <h3 class="feature-card__title">Mappe</h3>
+          <p class="feature-card__desc">Orientatevi nel labirinto veneziano. I posti imperdibili vicino a voi.</p>
+        </a>
+        <a href="Contatti.html" class="feature-card animate-up" style="text-decoration:none">
+          <div class="feature-card__icon">📞</div>
+          <h3 class="feature-card__title">Contatti</h3>
+          <p class="feature-card__desc">Numeri utili, emergenze e come raggiungere i proprietari in qualsiasi momento.</p>
+        </a>
+        <div class="feature-card animate-up" style="background:var(--charcoal); border-top-color:var(--terracotta);">
+          <div class="feature-card__icon">⚓</div>
+          <h3 class="feature-card__title" style="color:var(--cream);">Buon Soggiorno!</h3>
+          <p class="feature-card__desc" style="color:var(--warm-grey);">Speriamo che il vostro soggiorno a Venezia sia indimenticabile.</p>
         </div>
-        <script src="app.js"></script>
-    </body>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p>Ca'Cino</p>
+        <span>Venezia, Italia</span>
+      </div>
+      <div class="footer__nav">
+        <h4>Navigazione</h4>
+        <a href="Mappe.html">Mappe</a>
+        <a href="Istruzioni.html">Istruzioni</a>
+        <a href="Spazzatura.html">Spazzatura</a>
+        <a href="Wifi.html">Wi-Fi</a>
+        <a href="Contatti.html">Contatti</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>Ca'Cino &mdash; Guida per gli ospiti</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
 </html>

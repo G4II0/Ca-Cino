@@ -1,52 +1,117 @@
 <!DOCTYPE html>
-<html lang="Ita">
-
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="StyleIstruzioni.css" />
-    <link rel="stylesheet" href="Navbar.css" />
-    <title>Mappe</title>
-    <script src="https://kit.fontawesome.com/a38c6cc9ad.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mappe — Ca'Cino</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<!-- Body -->
-
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="./index.html" id="navbar__logo"> <!--<i class="fas fa-gem"></i>--> Ca'Cino</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span> <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="./Mappe.html" class="navbar__links">Mappe</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Istruzioni.html" class="navbar__links">Istruzioni</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Spazzatura.html" class="navbar__links">Spazzatura</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Wifi.html" class="navbar__links">Wifi</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Contatti.html" class="navbar__links">Contatti</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="body">
-        <!-- Istruzioni-->
-        <div class="Mappe">
-
-        </div>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">Ca'Cino</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="Mappe.html" class="navbar__links">Mappe</a></li>
+        <li><a href="Istruzioni.html" class="navbar__links">Istruzioni</a></li>
+        <li><a href="Spazzatura.html" class="navbar__links">Spazzatura</a></li>
+        <li><a href="Wifi.html" class="navbar__links">Wi-Fi</a></li>
+        <li><a href="Contatti.html" class="navbar__links">Contatti</a></li>
+      </ul>
     </div>
-    <script src="app.js"></script>
+  </nav>
+
+  <div class="page-header">
+    <h1>Mappe</h1>
+    <div class="page-header__divider"></div>
+  </div>
+
+  <!-- Mappa Ca'Cino — Sant'Elena -->
+  <img
+    src="./images/Map.png"
+    alt="Mappa Ca'Cino — Sant'Elena, Venezia"
+    class="map-embed"
+  />
+
+  <div class="content">
+
+    <p class="section-label">Dintorni</p>
+    <h2 class="section-title" style="text-align:left; font-size:1.8rem; margin-bottom:2rem;">Punti di interesse vicini</h2>
+
+    <div class="map-pois">
+      <div class="poi-card animate-up">
+        <p class="poi-card__cat">🥗 Mercato</p>
+        <h3 class="poi-card__name">Mercato di Rialto</h3>
+        <p class="poi-card__dist">~10 minuti a piedi — frutta, verdura, pesce freschissimo al mattino.</p>
+      </div>
+      <div class="poi-card animate-up">
+        <p class="poi-card__cat">🎨 Museo</p>
+        <h3 class="poi-card__name">Gallerie dell'Accademia</h3>
+        <p class="poi-card__dist">~15 minuti a piedi — la più grande collezione d'arte veneziana.</p>
+      </div>
+      <div class="poi-card animate-up">
+        <p class="poi-card__cat">⛪ Basilica</p>
+        <h3 class="poi-card__name">Basilica di San Marco</h3>
+        <p class="poi-card__dist">~12 minuti a piedi — prenotate online per evitare file.</p>
+      </div>
+      <div class="poi-card animate-up">
+        <p class="poi-card__cat">🚤 Vaporetto</p>
+        <h3 class="poi-card__name">Fermata San Silvestro</h3>
+        <p class="poi-card__dist">~3 minuti a piedi — linee 1 e 2, collegamento diretto con tutta Venezia.</p>
+      </div>
+      <div class="poi-card animate-up">
+        <p class="poi-card__cat">🛒 Supermercato</p>
+        <h3 class="poi-card__name">Conad City</h3>
+        <p class="poi-card__dist">~5 minuti a piedi — aperto 8:00–21:00, domenica 9:00–19:30.</p>
+      </div>
+      <div class="poi-card animate-up">
+        <p class="poi-card__cat">💊 Farmacia</p>
+        <h3 class="poi-card__name">Farmacia Morelli</h3>
+        <p class="poi-card__dist">~4 minuti a piedi — lun–sab 8:30–19:30. Turni notturni consultabili.</p>
+      </div>
+      <div class="poi-card animate-up">
+        <p class="poi-card__cat">☕ Caffè</p>
+        <h3 class="poi-card__name">Bar ai Nomboli</h3>
+        <p class="poi-card__dist">~2 minuti a piedi — colazione veneziana con tramezzini e ombra di vino.</p>
+      </div>
+      <div class="poi-card animate-up">
+        <p class="poi-card__cat">🍕 Ristorante</p>
+        <h3 class="poi-card__name">Trattoria da Fiore</h3>
+        <p class="poi-card__dist">~7 minuti a piedi — cucina veneziana autentica, prenotazione consigliata.</p>
+      </div>
+      <div class="poi-card animate-up">
+        <p class="poi-card__cat">🏛️ Palazzo</p>
+        <h3 class="poi-card__name">Ca' Rezzonico</h3>
+        <p class="poi-card__dist">~8 minuti a piedi — museo del '700 veneziano, affacciato sul Canal Grande.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:3rem;">
+      <a href="https://www.google.com/maps/place/Venice" target="_blank" class="btn-primary" style="display:inline-block;">
+        Apri in Google Maps
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer__top">
+      <div class="footer__brand"><p>Ca'Cino</p><span>Venezia, Italia</span></div>
+      <div class="footer__nav">
+        <h4>Navigazione</h4>
+        <a href="Mappe.html">Mappe</a>
+        <a href="Istruzioni.html">Istruzioni</a>
+        <a href="Spazzatura.html">Spazzatura</a>
+        <a href="Wifi.html">Wi-Fi</a>
+        <a href="Contatti.html">Contatti</a>
+      </div>
+    </div>
+    <div class="footer__bottom"><p>Ca'Cino &mdash; Guida per gli ospiti</p></div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

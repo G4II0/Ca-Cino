@@ -1,77 +1,132 @@
 <!DOCTYPE html>
-<html lang="Ita">
-
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="StyleSpazzatura.css" />
-    <link rel="stylesheet" href="Navbar.css" />
-    <title>Spazzatura</title>
-    <script src="https://kit.fontawesome.com/a38c6cc9ad.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spazzatura — Ca'Cino</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<!-- Body -->
-
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="./index.html" id="navbar__logo"> <!--<i class="fas fa-gem"></i>--> Ca'Cino</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span> <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="./Mappe.html" class="navbar__links">Mappe</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Istruzioni.html" class="navbar__links">Istruzioni</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Spazzatura.html" class="navbar__links">Spazzatura</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Wifi.html" class="navbar__links">Wifi</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Contatti.html" class="navbar__links">Contatti</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="body">
-        <!-- Istruzioni-->
-        <div class="services">
-            <div class="main__container">
-                <div class="main__content">
-                    <h1> I bidoni della spazzatura sono sotto il lavandino e sono etichettati per la vostra comodità.</h1>
-                </div>
-                <div class="main__img--container">
-                    <img src="images/Temp/Spazzatura.jpg" alt="pic" id="Spazzatura__img" />
-                </div>
-            </div>
-            <div class="main__container">
-                <div class="main__content">
-                    <h1>La spazzatura viene raccolta ogni giorno porta a porta, tranne la domenica.</h1>
-                </div>
-                <div class="main__img--container">
-                    <img src="images/Temp/RitiroImmondizia.png" alt="pic" id="Ritiro__img" />
-                </div>
-            </div>
-            <div class="main__container">
-                <div class="main__content">
-                    <h1>La spazzatura indifferenziata (bidone a sinistra) viene raccolta ogni giorno.</h1>
-                    <h2>La carta (bidone al centro) viene raccolta il lunedì, il mercoledì e il venerdì.</h2>
-                    <h2>Usate un sacchetto di carta per smaltire la carta.</h2>
-                </div>
-                <div class="main__img--container2">
-                    <img src="images/Temp/SacchettoCarta.jpg" alt="pic" id="Carta__img" />
-                </div>
-            </div>
-        </div>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">Ca'Cino</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="Mappe.html" class="navbar__links">Mappe</a></li>
+        <li><a href="Istruzioni.html" class="navbar__links">Istruzioni</a></li>
+        <li><a href="Spazzatura.html" class="navbar__links">Spazzatura</a></li>
+        <li><a href="Wifi.html" class="navbar__links">Wi-Fi</a></li>
+        <li><a href="Contatti.html" class="navbar__links">Contatti</a></li>
+      </ul>
     </div>
-    <script src="app.js"></script>
+  </nav>
+
+  <div class="page-header">
+    <h1>Spazzatura</h1>
+    <div class="page-header__divider"></div>
+  </div>
+
+  <div class="content">
+
+    <!-- Intro note -->
+    <div style="background:var(--parchment); border-left:3px solid var(--gold); padding:1.25rem 1.5rem; margin-bottom:3rem; font-family:var(--font-body); font-size:1.05rem; color:var(--charcoal);">
+      🗑️ I bidoni della spazzatura si trovano <strong>sotto il lavandino</strong> in cucina e sono etichettati con colori diversi. La raccolta avviene <strong>porta a porta ogni giorno</strong>, tranne la domenica.
+    </div>
+
+    <!-- Waste type cards -->
+    <p class="section-label">Tipologie di rifiuto</p>
+    <h2 class="section-title" style="text-align:left; margin-bottom:2rem; font-size:1.8rem;">Cosa va dove</h2>
+
+    <div class="waste-grid">
+      <div class="waste-card">
+        <div class="waste-card__emoji">🗑️</div>
+        <h3 class="waste-card__title">Indifferenziata</h3>
+        <p class="waste-card__day">Ogni giorno (tranne domenica)</p>
+        <p class="waste-card__desc">Tutto ciò che non è riciclabile: plastica sporca, carta stagnola, pannolini, mozziconi.</p>
+      </div>
+      <div class="waste-card blue">
+        <div class="waste-card__emoji">📰</div>
+        <h3 class="waste-card__title">Carta</h3>
+        <p class="waste-card__day" style="color:#3B82F6;">Lunedì · Mercoledì · Venerdì</p>
+        <p class="waste-card__desc">Giornali, cartone, scatole. Usate un <strong>sacchetto di carta</strong> per raccoglierla — non buste di plastica!</p>
+      </div>
+      <div class="waste-card green">
+        <div class="waste-card__emoji">🥗</div>
+        <h3 class="waste-card__title">Organico</h3>
+        <p class="waste-card__day" style="color:#22C55E;">Ogni giorno (tranne domenica)</p>
+        <p class="waste-card__desc">Scarti di cibo, fondi di caffè, bucce di frutta e verdura, fiori recisi.</p>
+      </div>
+      <div class="waste-card" style="border-top-color:#60A5FA;">
+        <div class="waste-card__emoji">🍶</div>
+        <h3 class="waste-card__title">Vetro &amp; Metallo</h3>
+        <p class="waste-card__day" style="color:#60A5FA;">Martedì · Giovedì · Sabato</p>
+        <p class="waste-card__desc">Bottiglie, barattoli, lattine. Sciacquate prima di buttare.</p>
+      </div>
+      <div class="waste-card" style="border-top-color:#F97316;">
+        <div class="waste-card__emoji">🧴</div>
+        <h3 class="waste-card__title">Plastica</h3>
+        <p class="waste-card__day" style="color:#F97316;">Lunedì · Giovedì · Sabato</p>
+        <p class="waste-card__desc">Bottiglie di plastica, flaconi, imballaggi. Schiacciate per risparmiare spazio.</p>
+      </div>
+      <div class="waste-card" style="border-top-color:#8B5CF6;">
+        <div class="waste-card__emoji">⚠️</div>
+        <h3 class="waste-card__title">Speciali</h3>
+        <p class="waste-card__day" style="color:#8B5CF6;">Su richiesta / isola ecologica</p>
+        <p class="waste-card__desc">Pile, farmaci, oli esausti. Non buttare con i rifiuti normali — chiedete al proprietario.</p>
+      </div>
+    </div>
+
+    <!-- Schedule table -->
+    <h2 class="section-title" style="text-align:left; margin-bottom:1.5rem; font-size:1.8rem; margin-top:1rem;">Calendario settimanale</h2>
+    <div style="overflow-x:auto;">
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Giorno</th>
+            <th>Raccolta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Lunedì</td><td>Indifferenziata · Carta · Plastica</td></tr>
+          <tr><td>Martedì</td><td>Indifferenziata · Organico · Vetro &amp; Metallo</td></tr>
+          <tr><td>Mercoledì</td><td>Indifferenziata · Carta</td></tr>
+          <tr><td>Giovedì</td><td>Indifferenziata · Organico · Vetro &amp; Metallo · Plastica</td></tr>
+          <tr><td>Venerdì</td><td>Indifferenziata · Carta</td></tr>
+          <tr><td>Sabato</td><td>Indifferenziata · Organico · Vetro &amp; Metallo · Plastica</td></tr>
+          <tr><td style="color:var(--warm-grey);">Domenica</td><td style="color:var(--warm-grey);">Nessuna raccolta</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Important note -->
+    <div style="background:var(--charcoal); color:var(--cream); padding:1.5rem 2rem; margin-top:3rem; display:flex; gap:1rem; align-items:flex-start;">
+      <span style="font-size:1.5rem; flex-shrink:0;">📦</span>
+      <div>
+        <strong style="font-family:var(--font-display); font-size:1.1rem; display:block; margin-bottom:0.4rem;">Sacchetto di carta per la carta</strong>
+        <span style="font-family:var(--font-body); font-size:0.95rem; color:var(--light-grey);">Per smaltire la carta e il cartone è <em>obbligatorio</em> usare un sacchetto di carta — non sacchetti di plastica. Ne trovate alcuni sotto il lavandino.</span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer__top">
+      <div class="footer__brand"><p>Ca'Cino</p><span>Venezia, Italia</span></div>
+      <div class="footer__nav">
+        <h4>Navigazione</h4>
+        <a href="Mappe.html">Mappe</a>
+        <a href="Istruzioni.html">Istruzioni</a>
+        <a href="Spazzatura.html">Spazzatura</a>
+        <a href="Wifi.html">Wi-Fi</a>
+        <a href="Contatti.html">Contatti</a>
+      </div>
+    </div>
+    <div class="footer__bottom"><p>Ca'Cino &mdash; Guida per gli ospiti</p></div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

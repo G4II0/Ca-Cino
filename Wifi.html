@@ -1,56 +1,100 @@
 <!DOCTYPE html>
-<html lang="Ita">
-
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="StyleWifi.css" />
-    <link rel="stylesheet" href="Navbar.css" />
-    <title>Istruzioni</title>
-    <script src="https://kit.fontawesome.com/a38c6cc9ad.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wi-Fi — Ca'Cino</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<!-- Body -->
-
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="./index.html" id="navbar__logo"> <!--<i class="fas fa-gem"></i>--> Ca'Cino</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span> <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="./Mappe.html" class="navbar__links">Mappe</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Istruzioni.html" class="navbar__links">Istruzioni</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Spazzatura.html" class="navbar__links">Spazzatura</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Wifi.html" class="navbar__links">Wifi</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Contatti.html" class="navbar__links">Contatti</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="body">
-        <!-- Istruzioni-->
-        <div class="services">
-            <div class="main__img--container">
-                <w1>Scannerizza per la wifi</w1>
-                <img src="images/Temp/QR.png" alt="pic" id="main__img--card" />
-            </div>
-        </div>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">Ca'Cino</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="Mappe.html" class="navbar__links">Mappe</a></li>
+        <li><a href="Istruzioni.html" class="navbar__links">Istruzioni</a></li>
+        <li><a href="Spazzatura.html" class="navbar__links">Spazzatura</a></li>
+        <li><a href="Wifi.html" class="navbar__links">Wi-Fi</a></li>
+        <li><a href="Contatti.html" class="navbar__links">Contatti</a></li>
+      </ul>
     </div>
-    <script src="app.js"></script>
-</body>
+  </nav>
 
+  <div class="page-header">
+    <h1>Wi-Fi</h1>
+    <div class="page-header__divider"></div>
+  </div>
+
+  <div class="content">
+    <div class="wifi-wrapper">
+
+      <div class="wifi-qr">
+        <img src="./images/QR.png" alt="QR Code Wi-Fi" />
+        <p class="wifi-qr__label">Scansionate per connettervi</p>
+      </div>
+
+      <div class="wifi-info">
+        <h2>Connessione facile &amp; veloce</h2>
+        <p style="font-family:var(--font-body); font-size:1.05rem; color:var(--warm-grey); margin-bottom:2rem; line-height:1.8;">
+          Scansionate il codice QR con la fotocamera del vostro smartphone 
+          per connettervi automaticamente alla rete Wi-Fi di Ca'Cino. 
+          In alternativa, usate le credenziali qui sotto.
+        </p>
+
+        <div class="wifi-detail">
+          <div class="wifi-detail__row">
+            <span class="wifi-detail__row-label">Rete</span>
+            <span class="wifi-detail__row-value">CaCino_WiFi</span>
+          </div>
+          <div class="wifi-detail__row">
+            <span class="wifi-detail__row-label">Password</span>
+            <span class="wifi-detail__row-value" id="wifi-pass" style="font-family:monospace; letter-spacing:0.08em;">••••••••••</span>
+          </div>
+        </div>
+
+        <button class="btn-primary" onclick="togglePassword()" id="toggle-btn">Mostra password</button>
+
+        <div style="margin-top:2.5rem; background:var(--parchment); padding:1.25rem 1.5rem; border-left:3px solid var(--gold); font-family:var(--font-body); font-size:0.95rem; color:var(--charcoal);">
+          🔧 <strong>Problemi di connessione?</strong> Il router è nel corridoio. 
+          Provate a spegnerlo e riaccenderlo tenendo premuto il tasto 
+          posteriore per 10 secondi. Se il problema persiste, 
+          <a href="Contatti.html" style="color:var(--canal); text-decoration:underline;">contattateci</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer__top">
+      <div class="footer__brand"><p>Ca'Cino</p><span>Venezia, Italia</span></div>
+      <div class="footer__nav">
+        <h4>Navigazione</h4>
+        <a href="Mappe.html">Mappe</a>
+        <a href="Istruzioni.html">Istruzioni</a>
+        <a href="Spazzatura.html">Spazzatura</a>
+        <a href="Wifi.html">Wi-Fi</a>
+        <a href="Contatti.html">Contatti</a>
+      </div>
+    </div>
+    <div class="footer__bottom"><p>Ca'Cino &mdash; Guida per gli ospiti</p></div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    // Replace with the real password
+    const WIFI_PASSWORD = 'CaCino2024!';
+    let shown = false;
+    function togglePassword() {
+      const el = document.getElementById('wifi-pass');
+      const btn = document.getElementById('toggle-btn');
+      shown = !shown;
+      el.textContent = shown ? WIFI_PASSWORD : '••••••••••';
+      btn.textContent = shown ? 'Nascondi password' : 'Mostra password';
+    }
+  </script>
+</body>
 </html>

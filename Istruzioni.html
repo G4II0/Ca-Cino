@@ -1,63 +1,115 @@
 <!DOCTYPE html>
-<html lang="Ita">
-
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="StyleIstruzioni.css" />
-    <link rel="stylesheet" href="Navbar.css" />
-    <title>Istruzioni</title>
-    <script src="https://kit.fontawesome.com/a38c6cc9ad.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Istruzioni — Ca'Cino</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<!-- Body -->
-
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="./index.html" id="navbar__logo"> <!--<i class="fas fa-gem"></i>--> Ca'Cino</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span> <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="./Mappe.html" class="navbar__links">Mappe</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Istruzioni.html" class="navbar__links">Istruzioni</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Spazzatura.html" class="navbar__links">Spazzatura</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Wifi.html" class="navbar__links">Wifi</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="./Contatti.html" class="navbar__links">Contatti</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="body">
-        <!-- Istruzioni-->
-        <div class="services">
-            <li class="Istructions__item">
-                <a href="./" class="Istructions__links">LETTI</a>
-            </li>
-            <li class="Istructions__item">
-                <a href="./" class="Istructions__links">ENTRATA</a>
-            </li>
-            <li class="Istructions__item">
-                <a href="./" class="Istructions__links">BAGNO</a>
-            </li>
-            <li class="Istructions__item">
-                <a href="./" class="Istructions__links">CUCINA</a>
-            </li>
-        </div>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">Ca'Cino</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="Mappe.html" class="navbar__links">Mappe</a></li>
+        <li><a href="Istruzioni.html" class="navbar__links">Istruzioni</a></li>
+        <li><a href="Spazzatura.html" class="navbar__links">Spazzatura</a></li>
+        <li><a href="Wifi.html" class="navbar__links">Wi-Fi</a></li>
+        <li><a href="Contatti.html" class="navbar__links">Contatti</a></li>
+      </ul>
     </div>
-    <script src="app.js"></script>
+  </nav>
+
+  <div class="page-header">
+    <h1>Istruzioni</h1>
+    <div class="page-header__divider"></div>
+  </div>
+
+  <div class="content">
+    <div class="instruction-grid">
+
+      <div class="instruction-card animate-up">
+        <span class="instruction-card__number">01</span>
+        <div class="instruction-card__icon">🛏️</div>
+        <h3 class="instruction-card__title">Letti &amp; Camera</h3>
+        <p class="instruction-card__body">
+          La biancheria è fornita e già preparata al vostro arrivo. 
+          Lenzuola pulite di ricambio si trovano nell'armadio bianco.
+          Per cambiare le lenzuola o averne di nuove, 
+          contattate i proprietari con almeno 24 ore di anticipo.
+        </p>
+        <div class="tip" style="margin-top:1.25rem; background:var(--parchment); padding:0.85rem 1rem; border-left:3px solid var(--gold); font-family:var(--font-body); font-size:0.95rem; color:var(--charcoal);">
+          💡 Il copriletto extra è in fondo all'armadio, in alto a sinistra.
+        </div>
+      </div>
+
+      <div class="instruction-card animate-up">
+        <span class="instruction-card__number">02</span>
+        <div class="instruction-card__icon">🚪</div>
+        <h3 class="instruction-card__title">Entrata &amp; Chiavi</h3>
+        <p class="instruction-card__body">
+          Avete due set di chiavi: una per il portone del palazzo 
+          (chiave grande) e una per la porta dell'appartamento (chiave piccola).
+          Il portone si chiude automaticamente — assicuratevi di avere sempre 
+          le chiavi con voi prima di uscire.
+        </p>
+        <div class="tip" style="margin-top:1.25rem; background:var(--parchment); padding:0.85rem 1rem; border-left:3px solid var(--gold); font-family:var(--font-body); font-size:0.95rem; color:var(--charcoal);">
+          💡 In caso di chiavi dimenticate: contattate il proprietario (vedi Contatti).
+        </div>
+      </div>
+
+      <div class="instruction-card animate-up">
+        <span class="instruction-card__number">03</span>
+        <div class="instruction-card__icon">🚿</div>
+        <h3 class="instruction-card__title">Bagno</h3>
+        <p class="instruction-card__body">
+          Asciugamani e teli doccia sono già nel bagno.
+          L'acqua calda si attiva girando la manopola della doccia 
+          verso sinistra — attendete 30 secondi prima che arrivi calda.
+          Non buttare carta nel water: usate il cestino accanto.
+        </p>
+        <div class="tip" style="margin-top:1.25rem; background:var(--parchment); padding:0.85rem 1rem; border-left:3px solid var(--gold); font-family:var(--font-body); font-size:0.95rem; color:var(--charcoal);">
+          💡 La pressione dell'acqua può variare: è normale a Venezia.
+        </div>
+      </div>
+
+      <div class="instruction-card animate-up">
+        <span class="instruction-card__number">04</span>
+        <div class="instruction-card__icon">🍳</div>
+        <h3 class="instruction-card__title">Cucina</h3>
+        <p class="instruction-card__body">
+          I fornelli sono a gas: premere e girare contemporaneamente 
+          per accendere, mantenere premuto per qualche secondo finché 
+          la fiamma non si stabilizza. Pentole, padelle e utensili 
+          sono nei cassetti e negli armadietti sotto il piano cottura.
+        </p>
+        <div class="tip" style="margin-top:1.25rem; background:var(--parchment); padding:0.85rem 1rem; border-left:3px solid var(--gold); font-family:var(--font-body); font-size:0.95rem; color:var(--charcoal);">
+          💡 Ricordate sempre di chiudere il gas quando finite di cucinare.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer__top">
+      <div class="footer__brand"><p>Ca'Cino</p><span>Venezia, Italia</span></div>
+      <div class="footer__nav">
+        <h4>Navigazione</h4>
+        <a href="Mappe.html">Mappe</a>
+        <a href="Istruzioni.html">Istruzioni</a>
+        <a href="Spazzatura.html">Spazzatura</a>
+        <a href="Wifi.html">Wi-Fi</a>
+        <a href="Contatti.html">Contatti</a>
+      </div>
+    </div>
+    <div class="footer__bottom"><p>Ca'Cino &mdash; Guida per gli ospiti</p></div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
