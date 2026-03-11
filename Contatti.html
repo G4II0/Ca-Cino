@@ -8,24 +8,25 @@
 </head>
 <body>
 
-  <nav class="navbar">
+    <nav class="navbar">
     <div class="navbar__container">
       <a href="index.html" id="navbar__logo">Ca'Cino</a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </div>
       <ul class="navbar__menu">
-        <li><a href="Mappe.html" class="navbar__links">Mappe</a></li>
-        <li><a href="Istruzioni.html" class="navbar__links">Istruzioni</a></li>
-        <li><a href="Spazzatura.html" class="navbar__links">Spazzatura</a></li>
-        <li><a href="Wifi.html" class="navbar__links">Wi-Fi</a></li>
-        <li><a href="Contatti.html" class="navbar__links">Contatti</a></li>
+        <li><a href="Mappe.html" class="navbar__links" data-i18n="nav.mappe">Mappe</a></li>
+        <li><a href="Istruzioni.html" class="navbar__links" data-i18n="nav.istruzioni">Istruzioni</a></li>
+        <li><a href="Spazzatura.html" class="navbar__links" data-i18n="nav.spazzatura">Spazzatura</a></li>
+        <li><a href="Wifi.html" class="navbar__links" data-i18n="nav.wifi">Wi-Fi</a></li>
+        <li><a href="Contatti.html" class="navbar__links" data-i18n="nav.contatti">Contatti</a></li>
+        <li><button id="lang-toggle" onclick="toggleLang()">&#127468;&#127463; EN</button></li>
       </ul>
     </div>
   </nav>
 
   <div class="page-header">
-    <h1>Contatti</h1>
+    <h1 data-i18n="page.title.contatti">Contatti</h1>
     <div class="page-header__divider"></div>
   </div>
 
@@ -35,10 +36,10 @@
       <div class="contact-card animate-up">
         <div class="contact-card__icon">👤</div>
         <h3 class="contact-card__name">Barbara Carrera</h3>
-        <p class="contact-card__role">Proprietario</p>
+        <p class="contact-card__role" data-i18n="cont.owner.role">Proprietario</p>
         <div class="contact-card__detail">
           <p>📱 <a href="tel:+393331234567">+39 328 281 9949</a></p>
-          <p>✉️ <a href="mailto:barbara@cacino.it">bcarrera1969@gmail.com</a></p>
+          <p>✉️ <a href="/cdn-cgi/l/email-protection#4a282b38282b382b0a292b2923242564233e"><span class="__cf_email__" data-cfemail="6103020013130413005058575821060c00080d4f020e0c">[email&#160;protected]</span></a></p>
 
           <!-- <p>cambiare orari</p> -->
           <p style="margin-top:0.75rem; font-size:0.9rem;">Disponibile ogni giorno 9:00–21:00. Per emergenze notturne, scrivete via WhatsApp.</p>
@@ -47,8 +48,8 @@
 
       <div class="contact-card animate-up">
         <div class="contact-card__icon">🔧</div>
-        <h3 class="contact-card__name">Assistenza Casa</h3>
-        <p class="contact-card__role">Manutenzione &amp; Problemi</p>
+        <h3 class="contact-card__name" data-i18n="cont.maint.title">Assistenza Casa</h3>
+        <p class="contact-card__role" data-i18n="cont.maint.role">Manutenzione &amp; Problemi</p>
         <div class="contact-card__detail">
           <p>📱 <a href="tel:+393339876543">+39 328 281 9949</a></p>
           <p style="margin-top:0.75rem; font-size:0.9rem;">Per problemi con impianti, elettricità, idraulica o qualsiasi guasto in appartamento.</p>
@@ -58,7 +59,7 @@
       <div class="contact-card animate-up">
         <div class="contact-card__icon">🏥</div>
         <h3 class="contact-card__name">Ospedale Civile SS. Giovanni e Paolo</h3>
-        <p class="contact-card__role">Pronto Soccorso</p>
+        <p class="contact-card__role" data-i18n="cont.osp.role">Pronto Soccorso</p>
         <div class="contact-card__detail">
           <p>📞 <a href="tel:+390412784111">118</a></p>
           <p style="margin-top:0.75rem; font-size:0.9rem;">Campo SS. Giovanni e Paolo, Venezia — raggiungibile a piedi o via vaporetto (linea 5.1).</p>
@@ -68,7 +69,7 @@
       <div class="contact-card animate-up">
         <div class="contact-card__icon">🚤</div>
         <h3 class="contact-card__name">ACTV — Vaporetti</h3>
-        <p class="contact-card__role">Trasporto pubblico</p>
+        <p class="contact-card__role" data-i18n="cont.actv.role">Trasporto pubblico</p>
         <div class="contact-card__detail">
           <p>🌐 <a href="https://actv.avmspa.it" target="_blank">actv.avmspa.it</a></p>
           <p style="margin-top:0.75rem; font-size:0.9rem;">Orari, linee e biglietti per i vaporetti di Venezia.</p>
@@ -80,7 +81,7 @@
     <div class="emergency-banner">
       <div class="emergency-banner__icon">🚨</div>
       <div class="emergency-banner__text">
-        <h3>Numeri di emergenza</h3>
+        <h3 data-i18n="cont.emerg.title">Numeri di emergenza</h3>
         <p>
           Carabinieri / Polizia: <strong>112</strong> &nbsp;·&nbsp;
           Vigili del Fuoco: <strong>115</strong> &nbsp;·&nbsp;
@@ -96,7 +97,7 @@
     <div class="footer__top">
       <div class="footer__brand"><p>Ca'Cino</p><span>Venezia, Italia</span></div>
       <div class="footer__nav">
-        <h4>Navigazione</h4>
+        <h4 data-i18n="footer.nav">Navigazione</h4>
         <a href="Mappe.html">Mappe</a>
         <a href="Istruzioni.html">Istruzioni</a>
         <a href="Spazzatura.html">Spazzatura</a>
@@ -104,9 +105,4 @@
         <a href="Contatti.html">Contatti</a>
       </div>
     </div>
-    <div class="footer__bottom"><p>Ca'Cino &mdash; Guida per gli ospiti</p></div>
-  </footer>
-
-  <script src="app.js"></script>
-</body>
-</html>
+    <div

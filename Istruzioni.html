@@ -8,24 +8,25 @@
 </head>
 <body>
 
-  <nav class="navbar">
+    <nav class="navbar">
     <div class="navbar__container">
       <a href="index.html" id="navbar__logo">Ca'Cino</a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </div>
       <ul class="navbar__menu">
-        <li><a href="Mappe.html" class="navbar__links">Mappe</a></li>
-        <li><a href="Istruzioni.html" class="navbar__links">Istruzioni</a></li>
-        <li><a href="Spazzatura.html" class="navbar__links">Spazzatura</a></li>
-        <li><a href="Wifi.html" class="navbar__links">Wi-Fi</a></li>
-        <li><a href="Contatti.html" class="navbar__links">Contatti</a></li>
+        <li><a href="Mappe.html" class="navbar__links" data-i18n="nav.mappe">Mappe</a></li>
+        <li><a href="Istruzioni.html" class="navbar__links" data-i18n="nav.istruzioni">Istruzioni</a></li>
+        <li><a href="Spazzatura.html" class="navbar__links" data-i18n="nav.spazzatura">Spazzatura</a></li>
+        <li><a href="Wifi.html" class="navbar__links" data-i18n="nav.wifi">Wi-Fi</a></li>
+        <li><a href="Contatti.html" class="navbar__links" data-i18n="nav.contatti">Contatti</a></li>
+        <li><button id="lang-toggle" onclick="toggleLang()">&#127468;&#127463; EN</button></li>
       </ul>
     </div>
   </nav>
 
   <div class="page-header">
-    <h1>Istruzioni</h1>
+    <h1 data-i18n="page.title.istruzioni">Istruzioni</h1>
     <div class="page-header__divider"></div>
   </div>
 
@@ -35,23 +36,23 @@
       <div class="instruction-card animate-up">
         <span class="instruction-card__number">01</span>
         <div class="instruction-card__icon">🛏️</div>
-        <h3 class="instruction-card__title">Letti &amp; Camera</h3>
-        <p class="instruction-card__body">
+        <h3 class="instruction-card__title" data-i18n="istr.01.title">Letti &amp; Camera</h3>
+        <p class="instruction-card__body" data-i18n="istr.01.body">
           La biancheria è fornita e già preparata al vostro arrivo. 
           Lenzuola pulite di ricambio si trovano nell'armadio bianco.
           Per cambiare le lenzuola o averne di nuove, 
           contattate i proprietari con almeno 24 ore di anticipo.
         </p>
-        <div class="tip" style="margin-top:1.25rem; background:var(--parchment); padding:0.85rem 1rem; border-left:3px solid var(--gold); font-family:var(--font-body); font-size:0.95rem; color:var(--charcoal);">
+        <div class="tip" style="margin-top:1.25rem; background:var(--parchment); padding:0.85rem 1rem; border-left:3px solid var(--gold); font-family:var(--font-body); font-size:0.95rem; color:var(--charcoal);"><span data-i18n="istr.04.tip"><span data-i18n="istr.03.tip"><span data-i18n="istr.02.tip"><span data-i18n="istr.01.tip">
           💡 Il copriletto extra è in fondo all'armadio, in alto a sinistra.
-        </div>
+        </span></span></span></span></div>
       </div>
 
       <div class="instruction-card animate-up">
         <span class="instruction-card__number">02</span>
         <div class="instruction-card__icon">🚪</div>
-        <h3 class="instruction-card__title">Entrata &amp; Chiavi</h3>
-        <p class="instruction-card__body">
+        <h3 class="instruction-card__title" data-i18n="istr.02.title">Entrata &amp; Chiavi</h3>
+        <p class="instruction-card__body" data-i18n="istr.02.body">
           Avete due set di chiavi: una per il portone del palazzo 
           (chiave grande) e una per la porta dell'appartamento (chiave piccola).
           Il portone si chiude automaticamente — assicuratevi di avere sempre 
@@ -65,8 +66,8 @@
       <div class="instruction-card animate-up">
         <span class="instruction-card__number">03</span>
         <div class="instruction-card__icon">🚿</div>
-        <h3 class="instruction-card__title">Bagno</h3>
-        <p class="instruction-card__body">
+        <h3 class="instruction-card__title" data-i18n="istr.03.title">Bagno</h3>
+        <p class="instruction-card__body" data-i18n="istr.03.body">
           Asciugamani e teli doccia sono già nel bagno.
           L'acqua calda si attiva girando la manopola della doccia 
           verso sinistra — attendete 30 secondi prima che arrivi calda.
@@ -80,8 +81,8 @@
       <div class="instruction-card animate-up">
         <span class="instruction-card__number">04</span>
         <div class="instruction-card__icon">🍳</div>
-        <h3 class="instruction-card__title">Cucina</h3>
-        <p class="instruction-card__body">
+        <h3 class="instruction-card__title" data-i18n="istr.04.title">Cucina</h3>
+        <p class="instruction-card__body" data-i18n="istr.04.body">
           I fornelli sono a gas: premere e girare contemporaneamente 
           per accendere, mantenere premuto per qualche secondo finché 
           la fiamma non si stabilizza. Pentole, padelle e utensili 
@@ -99,7 +100,7 @@
     <div class="footer__top">
       <div class="footer__brand"><p>Ca'Cino</p><span>Venezia, Italia</span></div>
       <div class="footer__nav">
-        <h4>Navigazione</h4>
+        <h4 data-i18n="footer.nav">Navigazione</h4>
         <a href="Mappe.html">Mappe</a>
         <a href="Istruzioni.html">Istruzioni</a>
         <a href="Spazzatura.html">Spazzatura</a>
@@ -107,9 +108,10 @@
         <a href="Contatti.html">Contatti</a>
       </div>
     </div>
-    <div class="footer__bottom"><p>Ca'Cino &mdash; Guida per gli ospiti</p></div>
+    <div class="footer__bottom"><p data-i18n="footer.copy">Ca'Cino &mdash; Guida per gli ospiti</p></div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -8,24 +8,25 @@
 </head>
 <body>
 
-  <nav class="navbar">
+    <nav class="navbar">
     <div class="navbar__container">
       <a href="index.html" id="navbar__logo">Ca'Cino</a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </div>
       <ul class="navbar__menu">
-        <li><a href="Mappe.html" class="navbar__links">Mappe</a></li>
-        <li><a href="Istruzioni.html" class="navbar__links">Istruzioni</a></li>
-        <li><a href="Spazzatura.html" class="navbar__links">Spazzatura</a></li>
-        <li><a href="Wifi.html" class="navbar__links">Wi-Fi</a></li>
-        <li><a href="Contatti.html" class="navbar__links">Contatti</a></li>
+        <li><a href="Mappe.html" class="navbar__links" data-i18n="nav.mappe">Mappe</a></li>
+        <li><a href="Istruzioni.html" class="navbar__links" data-i18n="nav.istruzioni">Istruzioni</a></li>
+        <li><a href="Spazzatura.html" class="navbar__links" data-i18n="nav.spazzatura">Spazzatura</a></li>
+        <li><a href="Wifi.html" class="navbar__links" data-i18n="nav.wifi">Wi-Fi</a></li>
+        <li><a href="Contatti.html" class="navbar__links" data-i18n="nav.contatti">Contatti</a></li>
+        <li><button id="lang-toggle" onclick="toggleLang()">&#127468;&#127463; EN</button></li>
       </ul>
     </div>
   </nav>
 
   <div class="page-header">
-    <h1>Wi-Fi</h1>
+    <h1 data-i18n="page.title.wifi">Wi-Fi</h1>
     <div class="page-header__divider"></div>
   </div>
 
@@ -34,11 +35,11 @@
 
       <div class="wifi-qr">
         <img src="./images/QR.png" alt="QR Code Wi-Fi" />
-        <p class="wifi-qr__label">Scansionate per connettervi</p>
+        <p class="wifi-qr__label" data-i18n="wifi.qr.label">Scansionate per connettervi</p>
       </div>
 
       <div class="wifi-info">
-        <h2>Connessione facile &amp; veloce</h2>
+        <h2 data-i18n="wifi.heading">Connessione facile &amp; veloce</h2>
         <p style="font-family:var(--font-body); font-size:1.05rem; color:var(--warm-grey); margin-bottom:2rem; line-height:1.8;">
           Scansionate il codice QR con la fotocamera del vostro smartphone 
           per connettervi automaticamente alla rete Wi-Fi di Ca'Cino. 
@@ -47,11 +48,11 @@
 
         <div class="wifi-detail">
           <div class="wifi-detail__row">
-            <span class="wifi-detail__row-label">Rete</span>
+            <span class="wifi-detail__row-label" data-i18n="wifi.rete">Rete</span>
             <span class="wifi-detail__row-value">CaCino_WiFi</span>
           </div>
           <div class="wifi-detail__row">
-            <span class="wifi-detail__row-label">Password</span>
+            <span class="wifi-detail__row-label" data-i18n="wifi.pass">Password</span>
             <span class="wifi-detail__row-value" id="wifi-pass" style="font-family:monospace; letter-spacing:0.08em;">••••••••••</span>
           </div>
         </div>
@@ -72,7 +73,7 @@
     <div class="footer__top">
       <div class="footer__brand"><p>Ca'Cino</p><span>Venezia, Italia</span></div>
       <div class="footer__nav">
-        <h4>Navigazione</h4>
+        <h4 data-i18n="footer.nav">Navigazione</h4>
         <a href="Mappe.html">Mappe</a>
         <a href="Istruzioni.html">Istruzioni</a>
         <a href="Spazzatura.html">Spazzatura</a>
@@ -80,9 +81,10 @@
         <a href="Contatti.html">Contatti</a>
       </div>
     </div>
-    <div class="footer__bottom"><p>Ca'Cino &mdash; Guida per gli ospiti</p></div>
+    <div class="footer__bottom"><p data-i18n="footer.copy">Ca'Cino &mdash; Guida per gli ospiti</p></div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="app.js"></script>
   <script>
     // Replace with the real password
@@ -93,7 +95,7 @@
       const btn = document.getElementById('toggle-btn');
       shown = !shown;
       el.textContent = shown ? WIFI_PASSWORD : '••••••••••';
-      btn.textContent = shown ? 'Nascondi password' : 'Mostra password';
+      btn.innerHTML = shown ? (getLang()==='it' ? T['wifi.hide'].it : T['wifi.hide'].en) : (getLang()==='it' ? T['wifi.show'].it : T['wifi.show'].en);
     }
   </script>
 </body>

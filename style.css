@@ -615,3 +615,23 @@ footer { background: var(--navy-dark); padding: 3.5rem 50px 2rem; }
   .slideshow { min-height: 70vw; }
   .slide__btn { width: 36px; height: 36px; font-size: 1.3rem; }
 }
+
+/* ── Language toggle button ───────────────────────────── */
+#lang-toggle {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #fff;
+  font-family: var(--font-display, 'Nunito Sans', sans-serif);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+}
+#lang-toggle:hover {
+  background: rgba(255,255,255,0.28);
+  border-color: rgba(255,255,255,0.7);
+}

@@ -8,24 +8,25 @@
 </head>
 <body>
 
-  <nav class="navbar">
+    <nav class="navbar">
     <div class="navbar__container">
       <a href="index.html" id="navbar__logo">Ca'Cino</a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </div>
       <ul class="navbar__menu">
-        <li><a href="Mappe.html" class="navbar__links">Mappe</a></li>
-        <li><a href="Istruzioni.html" class="navbar__links">Istruzioni</a></li>
-        <li><a href="Spazzatura.html" class="navbar__links">Spazzatura</a></li>
-        <li><a href="Wifi.html" class="navbar__links">Wi-Fi</a></li>
-        <li><a href="Contatti.html" class="navbar__links">Contatti</a></li>
+        <li><a href="Mappe.html" class="navbar__links" data-i18n="nav.mappe">Mappe</a></li>
+        <li><a href="Istruzioni.html" class="navbar__links" data-i18n="nav.istruzioni">Istruzioni</a></li>
+        <li><a href="Spazzatura.html" class="navbar__links" data-i18n="nav.spazzatura">Spazzatura</a></li>
+        <li><a href="Wifi.html" class="navbar__links" data-i18n="nav.wifi">Wi-Fi</a></li>
+        <li><a href="Contatti.html" class="navbar__links" data-i18n="nav.contatti">Contatti</a></li>
+        <li><button id="lang-toggle" onclick="toggleLang()">&#127468;&#127463; EN</button></li>
       </ul>
     </div>
   </nav>
 
   <div class="page-header">
-    <h1>Mappe</h1>
+    <h1 data-i18n="page.title.mappe">Mappe</h1>
     <div class="page-header__divider"></div>
   </div>
 
@@ -38,7 +39,7 @@
 
   <div class="content">
 
-    <p class="section-label">Dintorni</p>
+    <p class="section-label" data-i18n="mappe.label">Dintorni</p>
     <h2 class="section-title" style="text-align:left; font-size:1.8rem; margin-bottom:2rem;">Punti di interesse vicini</h2>
 
     <div class="map-pois">
@@ -101,7 +102,7 @@
     <div class="footer__top">
       <div class="footer__brand"><p>Ca'Cino</p><span>Venezia, Italia</span></div>
       <div class="footer__nav">
-        <h4>Navigazione</h4>
+        <h4 data-i18n="footer.nav">Navigazione</h4>
         <a href="Mappe.html">Mappe</a>
         <a href="Istruzioni.html">Istruzioni</a>
         <a href="Spazzatura.html">Spazzatura</a>
@@ -109,9 +110,10 @@
         <a href="Contatti.html">Contatti</a>
       </div>
     </div>
-    <div class="footer__bottom"><p>Ca'Cino &mdash; Guida per gli ospiti</p></div>
+    <div class="footer__bottom"><p data-i18n="footer.copy">Ca'Cino &mdash; Guida per gli ospiti</p></div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
