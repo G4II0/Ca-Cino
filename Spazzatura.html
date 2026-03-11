@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <nav class="navbar">
+      <nav class="navbar">
     <div class="navbar__container">
       <a href="index.html" id="navbar__logo">Ca'Cino</a>
       <div class="navbar__toggle" id="mobile-menu">
@@ -20,7 +20,15 @@
         <li><a href="Spazzatura.html" class="navbar__links" data-i18n="nav.spazzatura">Spazzatura</a></li>
         <li><a href="Wifi.html" class="navbar__links" data-i18n="nav.wifi">Wi-Fi</a></li>
         <li><a href="Contatti.html" class="navbar__links" data-i18n="nav.contatti">Contatti</a></li>
-        <li><button id="lang-toggle" onclick="toggleLang()">&#127468;&#127463; EN</button></li>
+        <li class="lang-switcher">
+          <button class="lang-switcher__btn" onclick="toggleLangMenu()" aria-label="Seleziona lingua">🌐</button>
+          <ul class="lang-switcher__menu" id="lang-menu">
+            <li><button data-lang="it" onclick="applyLang('it')">🇮🇹 Italiano</button></li>
+            <li><button data-lang="en" onclick="applyLang('en')">🇬🇧 English</button></li>
+            <li><button data-lang="de" onclick="applyLang('de')">🇩🇪 Deutsch</button></li>
+            <li><button data-lang="fr" onclick="applyLang('fr')">🇫🇷 Français</button></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>
@@ -34,7 +42,7 @@
 
     <!-- Intro note -->
     <div style="background:var(--parchment); border-left:3px solid var(--gold); padding:1.25rem 1.5rem; margin-bottom:3rem; font-family:var(--font-body); font-size:1.05rem; color:var(--charcoal);">
-      🗑️ I bidoni della spazzatura si trovano <strong>sotto il lavandino</strong> in cucina e sono etichettati con colori diversi. La raccolta avviene <strong>porta a porta ogni giorno</strong>, tranne la domenica.
+      🗑️ I bidoni della spazzatura si trovano <strong>a lato del caminetto</strong> in cucina. La raccolta avviene <strong>porta a porta ogni giorno</strong>, tranne la domenica.
     </div>
 
     <!-- Waste type cards -->
@@ -128,7 +136,7 @@
     <div class="footer__bottom"><p data-i18n="footer.copy">Ca'Cino &mdash; Guida per gli ospiti</p></div>
   </footer>
 
-  <script src="i18n.js"></script>
-  <script src="app.js"></script>
+  <script src="i18n.js?v=2"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>
