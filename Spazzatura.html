@@ -8,7 +8,7 @@
 </head>
 <body>
 
-      <nav class="navbar">
+  <nav class="navbar">
     <div class="navbar__container">
       <a href="index.html" id="navbar__logo">Ca'Cino</a>
       <div class="navbar__toggle" id="mobile-menu">
@@ -40,56 +40,53 @@
 
   <div class="content">
 
-    <!-- Intro note -->
-    <div style="background:var(--parchment); border-left:3px solid var(--gold); padding:1.25rem 1.5rem; margin-bottom:3rem; font-family:var(--font-body); font-size:1.05rem; color:var(--charcoal);">
+    <div style="background:var(--parchment); border-left:3px solid var(--gold); padding:1.25rem 1.5rem; margin-bottom:3rem; font-family:var(--font-body); font-size:1.05rem; color:var(--charcoal);" data-i18n="spaz.intro">
       🗑️ I bidoni della spazzatura si trovano <strong>a lato del caminetto</strong> in cucina. La raccolta avviene <strong>porta a porta ogni giorno</strong>, tranne la domenica.
     </div>
 
-    <!-- Waste type cards -->
     <p class="section-label" data-i18n="spaz.label">Tipologie di rifiuto</p>
-    <h2 class="section-title" style="text-align:left; margin-bottom:2rem; font-size:1.8rem;">Cosa va dove</h2>
+    <h2 class="section-title" style="text-align:left; margin-bottom:2rem; font-size:1.8rem;" data-i18n="spaz.heading">Cosa va dove</h2>
 
     <div class="waste-grid">
       <div class="waste-card">
         <div class="waste-card__emoji">🗑️</div>
-        <h3 class="waste-card__title">Indifferenziata</h3>
-        <p class="waste-card__day">Ogni giorno (tranne domenica)</p>
-        <p class="waste-card__desc">Tutto ciò che non è riciclabile: plastica sporca, carta stagnola, pannolini, mozziconi.</p>
+        <h3 class="waste-card__title" data-i18n="spaz.ind.title">Indifferenziata</h3>
+        <p class="waste-card__day" data-i18n="spaz.ind.day">Ogni giorno (tranne domenica)</p>
+        <p class="waste-card__desc" data-i18n="spaz.ind.desc">Tutto ciò che non è riciclabile: plastica sporca, carta stagnola, pannolini, mozziconi.</p>
       </div>
       <div class="waste-card blue">
         <div class="waste-card__emoji">📰</div>
-        <h3 class="waste-card__title">Carta</h3>
-        <p class="waste-card__day" style="color:#3B82F6;">Lunedì · Mercoledì · Venerdì</p>
-        <p class="waste-card__desc">Giornali, cartone, scatole. Usate un <strong>sacchetto di carta</strong> per raccoglierla — non buste di plastica!</p>
+        <h3 class="waste-card__title" data-i18n="spaz.carta.title">Carta</h3>
+        <p class="waste-card__day" style="color:#3B82F6;" data-i18n="spaz.carta.day">Lunedì · Mercoledì · Venerdì</p>
+        <p class="waste-card__desc" data-i18n="spaz.carta.desc">Giornali, cartone, scatole. Usate un <strong>sacchetto di carta</strong> per raccoglierla — non buste di plastica!</p>
       </div>
       <div class="waste-card green">
         <div class="waste-card__emoji">🥗</div>
-        <h3 class="waste-card__title">Organico</h3>
-        <p class="waste-card__day" style="color:#22C55E;">Ogni giorno (tranne domenica)</p>
-        <p class="waste-card__desc">Scarti di cibo, fondi di caffè, bucce di frutta e verdura, fiori recisi.</p>
+        <h3 class="waste-card__title" data-i18n="spaz.org.title">Organico</h3>
+        <p class="waste-card__day" style="color:#22C55E;" data-i18n="spaz.org.day">Ogni giorno (tranne domenica)</p>
+        <p class="waste-card__desc" data-i18n="spaz.org.desc">Scarti di cibo, fondi di caffè, bucce di frutta e verdura, fiori recisi.</p>
       </div>
       <div class="waste-card" style="border-top-color:#60A5FA;">
         <div class="waste-card__emoji">🍶</div>
-        <h3 class="waste-card__title">Vetro &amp; Metallo</h3>
-        <p class="waste-card__day" style="color:#60A5FA;">Martedì · Giovedì · Sabato</p>
-        <p class="waste-card__desc">Bottiglie, barattoli, lattine. Sciacquate prima di buttare.</p>
+        <h3 class="waste-card__title" data-i18n="spaz.vetro.title">Vetro &amp; Metallo</h3>
+        <p class="waste-card__day" style="color:#60A5FA;" data-i18n="spaz.vetro.day">Martedì · Giovedì · Sabato</p>
+        <p class="waste-card__desc" data-i18n="spaz.vetro.desc">Bottiglie, barattoli, lattine. Sciacquate prima di buttare.</p>
       </div>
       <div class="waste-card" style="border-top-color:#F97316;">
         <div class="waste-card__emoji">🧴</div>
-        <h3 class="waste-card__title">Plastica</h3>
-        <p class="waste-card__day" style="color:#F97316;">Lunedì · Giovedì · Sabato</p>
-        <p class="waste-card__desc">Bottiglie di plastica, flaconi, imballaggi. Schiacciate per risparmiare spazio.</p>
+        <h3 class="waste-card__title" data-i18n="spaz.plas.title">Plastica</h3>
+        <p class="waste-card__day" style="color:#F97316;" data-i18n="spaz.plas.day">Lunedì · Giovedì · Sabato</p>
+        <p class="waste-card__desc" data-i18n="spaz.plas.desc">Bottiglie di plastica, flaconi, imballaggi. Schiacciate per risparmiare spazio.</p>
       </div>
       <div class="waste-card" style="border-top-color:#8B5CF6;">
         <div class="waste-card__emoji">⚠️</div>
-        <h3 class="waste-card__title">Speciali</h3>
-        <p class="waste-card__day" style="color:#8B5CF6;">Su richiesta / isola ecologica</p>
-        <p class="waste-card__desc">Pile, farmaci, oli esausti. Non buttare con i rifiuti normali — chiedete al proprietario.</p>
+        <h3 class="waste-card__title" data-i18n="spaz.spec.title">Speciali</h3>
+        <p class="waste-card__day" style="color:#8B5CF6;" data-i18n="spaz.spec.day">Su richiesta / isola ecologica</p>
+        <p class="waste-card__desc" data-i18n="spaz.spec.desc">Pile, farmaci, oli esausti. Non buttare con i rifiuti normali — chiedete al proprietario.</p>
       </div>
     </div>
 
-    <!-- Schedule table -->
-    <h2 class="section-title" style="text-align:left; margin-bottom:1.5rem; font-size:1.8rem; margin-top:1rem;">Calendario settimanale</h2>
+    <h2 class="section-title" style="text-align:left; margin-bottom:1.5rem; font-size:1.8rem; margin-top:1rem;" data-i18n="spaz.cal.heading">Calendario settimanale</h2>
     <div style="overflow-x:auto;">
       <table class="schedule-table">
         <thead>
@@ -99,23 +96,22 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td data-i18n="spaz.lun">Lunedì</td><td>Indifferenziata · Carta · Plastica</td></tr>
-          <tr><td data-i18n="spaz.mar">Martedì</td><td>Indifferenziata · Organico · Vetro &amp; Metallo</td></tr>
-          <tr><td data-i18n="spaz.mer">Mercoledì</td><td>Indifferenziata · Carta</td></tr>
-          <tr><td data-i18n="spaz.gio">Giovedì</td><td>Indifferenziata · Organico · Vetro &amp; Metallo · Plastica</td></tr>
-          <tr><td data-i18n="spaz.ven">Venerdì</td><td>Indifferenziata · Carta</td></tr>
-          <tr><td data-i18n="spaz.sab">Sabato</td><td>Indifferenziata · Organico · Vetro &amp; Metallo · Plastica</td></tr>
-          <tr><td style="color:var(--warm-grey);" data-i18n="spaz.dom">Domenica</td><td style="color:var(--warm-grey);">Nessuna raccolta</td></tr>
+          <tr><td data-i18n="spaz.lun">Lunedì</td><td data-i18n="spaz.lun.val">Indifferenziata · Carta · Plastica</td></tr>
+          <tr><td data-i18n="spaz.mar">Martedì</td><td data-i18n="spaz.mar.val">Indifferenziata · Organico · Vetro &amp; Metallo</td></tr>
+          <tr><td data-i18n="spaz.mer">Mercoledì</td><td data-i18n="spaz.mer.val">Indifferenziata · Carta</td></tr>
+          <tr><td data-i18n="spaz.gio">Giovedì</td><td data-i18n="spaz.gio.val">Indifferenziata · Organico · Vetro &amp; Metallo · Plastica</td></tr>
+          <tr><td data-i18n="spaz.ven">Venerdì</td><td data-i18n="spaz.ven.val">Indifferenziata · Carta</td></tr>
+          <tr><td data-i18n="spaz.sab">Sabato</td><td data-i18n="spaz.sab.val">Indifferenziata · Organico · Vetro &amp; Metallo · Plastica</td></tr>
+          <tr><td style="color:var(--warm-grey);" data-i18n="spaz.dom">Domenica</td><td style="color:var(--warm-grey);" data-i18n="spaz.dom.val">Nessuna raccolta</td></tr>
         </tbody>
       </table>
     </div>
 
-    <!-- Important note -->
     <div style="background:var(--charcoal); color:var(--cream); padding:1.5rem 2rem; margin-top:3rem; display:flex; gap:1rem; align-items:flex-start;">
       <span style="font-size:1.5rem; flex-shrink:0;">📦</span>
       <div>
-        <strong style="font-family:var(--font-display); font-size:1.1rem; display:block; margin-bottom:0.4rem;">Sacchetto di carta per la carta</strong>
-        <span style="font-family:var(--font-body); font-size:0.95rem; color:var(--light-grey);">Per smaltire la carta e il cartone è <em>obbligatorio</em> usare un sacchetto di carta — non sacchetti di plastica. Ne trovate alcuni sotto il lavandino.</span>
+        <strong style="font-family:var(--font-display); font-size:1.1rem; display:block; margin-bottom:0.4rem;" data-i18n="spaz.note.title">Sacchetto di carta per la carta</strong>
+        <span style="font-family:var(--font-body); font-size:0.95rem; color:var(--light-grey);" data-i18n="spaz.note.body">Per smaltire la carta e il cartone è <em>obbligatorio</em> usare un sacchetto di carta — non sacchetti di plastica. Ne trovate alcuni sotto il lavandino.</span>
       </div>
     </div>
 

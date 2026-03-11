@@ -1,4 +1,4 @@
-// ── Navbar mobile toggle ──────────────────────────────────────
+// Navbar mobile toggle
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 if (menu && menuLinks) {
@@ -14,7 +14,7 @@ if (menu && menuLinks) {
   );
 }
 
-// ── Slideshow ─────────────────────────────────────────────────
+// Slideshow
 const slideshow = document.getElementById('slideshow');
 if (slideshow) {
   const slides = slideshow.querySelectorAll('.slide');

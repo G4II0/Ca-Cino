@@ -8,7 +8,7 @@
 </head>
 <body>
 
-      <nav class="navbar">
+  <nav class="navbar">
     <div class="navbar__container">
       <a href="index.html" id="navbar__logo">Ca'Cino</a>
       <div class="navbar__toggle" id="mobile-menu">
@@ -48,10 +48,8 @@
 
       <div class="wifi-info">
         <h2 data-i18n="wifi.heading">Connessione facile &amp; veloce</h2>
-        <p style="font-family:var(--font-body); font-size:1.05rem; color:var(--warm-grey); margin-bottom:2rem; line-height:1.8;">
-          Scansionate il codice QR con la fotocamera del vostro smartphone 
-          per connettervi automaticamente alla rete Wi-Fi di Ca'Cino. 
-          In alternativa, usate le credenziali qui sotto.
+        <p style="font-family:var(--font-body); font-size:1.05rem; color:var(--warm-grey); margin-bottom:2rem; line-height:1.8;" data-i18n="wifi.desc">
+          Scansionate il codice QR con la fotocamera del vostro smartphone per connettervi automaticamente alla rete Wi-Fi di Ca'Cino. In alternativa, usate le credenziali qui sotto.
         </p>
 
         <div class="wifi-detail">
@@ -65,13 +63,10 @@
           </div>
         </div>
 
-        <button class="btn-primary" onclick="togglePassword()" id="toggle-btn">Mostra password</button>
+        <button class="btn-primary" onclick="togglePassword()" id="toggle-btn" data-i18n="wifi.show">Mostra password</button>
 
-        <div style="margin-top:2.5rem; background:var(--parchment); padding:1.25rem 1.5rem; border-left:3px solid var(--gold); font-family:var(--font-body); font-size:0.95rem; color:var(--charcoal);">
-          🔧 <strong>Problemi di connessione?</strong> Il router è nel corridoio. 
-          Provate a spegnerlo e riaccenderlo tenendo premuto il tasto 
-          posteriore per 10 secondi. Se il problema persiste, 
-          <a href="Contatti.html" style="color:var(--canal); text-decoration:underline;">contattateci</a>.
+        <div style="margin-top:2.5rem; background:var(--parchment); padding:1.25rem 1.5rem; border-left:3px solid var(--gold); font-family:var(--font-body); font-size:0.95rem; color:var(--charcoal);" data-i18n="wifi.tip">
+          🔧 <strong>Problemi di connessione?</strong> Il router è nel corridoio. Provate a spegnerlo e riaccenderlo tenendo premuto il tasto posteriore per 10 secondi. Se il problema persiste, <a href="Contatti.html" style="color:var(--canal); text-decoration:underline;">contattateci</a>.
         </div>
       </div>
     </div>
@@ -95,7 +90,6 @@
   <script src="i18n.js?v=2"></script>
   <script src="app.js?v=2"></script>
   <script>
-    // Replace with the real password
     const WIFI_PASSWORD = 'CaCino2024!!!';
     let shown = false;
     function togglePassword() {
@@ -103,7 +97,9 @@
       const btn = document.getElementById('toggle-btn');
       shown = !shown;
       el.textContent = shown ? WIFI_PASSWORD : '••••••••••';
-      btn.innerHTML = shown ? (getLang()==='it' ? T['wifi.hide'].it : T['wifi.hide'].en) : (getLang()==='it' ? T['wifi.show'].it : T['wifi.show'].en);
+      // Use i18n key for button text
+      const lang = getLang();
+      btn.textContent = shown ? T['wifi.hide'][lang] : T['wifi.show'][lang];
     }
   </script>
 </body>
